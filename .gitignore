@@ -1,0 +1,4 @@
+# leave node_modules in
+node_modules 
+.vscode
+.DS_Store
