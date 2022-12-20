@@ -1,7 +1,7 @@
 # teamPage-html-genny
 take user input in a CLI app to create an html file for a team page, including manager, engineers and interns positions, as well as some info about them
 
-
+<!-- I would like to add an Inquirer question to ask for a team name with a default 'My Team' to display at top of page -->
 <!-- 
 AS A manager
 I WANT to generate a webpage that displays my team's basic info

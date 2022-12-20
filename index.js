@@ -2,29 +2,35 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-inquirer.registerPrompt("loop", require("inquirer-loop")(inquirer));
+const { createManagerCard, createEngineerCard, createInternCard } = require('./src/cards')
+const createHtml = require('./src/html')
 
+const Manager = require('./lib/Manager')
+const Engineer = require('./lib/Engineer')
+const Intern = require('./lib/Intern')
+
+inquirer.registerPrompt("loop", require("inquirer-loop")(inquirer));
 
 const questions = [
     {
         type: 'input',
         message: 'What is the managers name?',
-        name: 'managerName',
+        name: 'name',
     },
     {
         type: 'input',
         message: 'What the managers ID?',
-        name: 'managerID',
+        name: 'id',
     },
     {
         type: 'input',
         message: 'What the managers email?',
-        name: 'managerEmail',
+        name: 'email',
     },
     {
         type: 'input',
         message: 'What the managers office number?',
-        name: 'managerOfficeNumber',
+        name: 'officeNumber',
     },
     {
         type: 'loop',
@@ -40,28 +46,28 @@ const questions = [
             {
                 type: 'input?',
                 message: 'What is the teammates name?',
-                name: 'teammateName',
+                name: 'name',
             },
             {
                 type: 'input',
                 message: 'What is the teammates ID?',
-                name: 'teammateID',
+                name: 'id',
             },
             {
                 type: 'input',
                 message: 'What is the teammates email?',
-                name: 'teammateEmail',
+                name: 'email',
             },
             {
                 type: 'input',
                 message: 'What is the engineer GitHub?',
-                name: 'teammateGitHub',
+                name: 'github',
                 when: (userAnswers) => userAnswers.type === 'Engineer'
             },
             {
                 type: 'input',
                 message: 'What is the interns school?',
-                name: 'internSchool',
+                name: 'school',
                 when: (userAnswers) => userAnswers.type === 'Intern'
             },
         ]
