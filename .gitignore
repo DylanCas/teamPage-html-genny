@@ -2,5 +2,3 @@
 node_modules 
 .vscode
 .DS_Store
-# following 'ignore' for html template I made first
-htmltemp.html
