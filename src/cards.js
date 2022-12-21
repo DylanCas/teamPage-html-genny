@@ -1,6 +1,6 @@
 function createManagerCard(manager) {
     const managerCard = `<section class="card">
-    <section class="card-title">
+    <section class="cardTitle">
         <h3 class="name">${manager.name}</h3>
         <h4 class="type">Manager</h4>
     </section>
@@ -18,7 +18,7 @@ function createEngineerCards(engineers) {
     for(let i = 0; i < engineers.length; i++) {
         let engineer = engineers[i]
         let card = `<section class="card">
-        <section class="card-title">
+        <section class="cardTitle">
             <h3 class="name">${engineer.name}</h3>
             <h4 class="type">Engineer</h4>
         </section>
@@ -38,7 +38,7 @@ function createInternCards(interns) {
     for(let i = 0; i < interns.length; i++) {
         let intern = interns[i]
         let card = `<section class="card">
-        <section class="card-title">
+        <section class="cardTitle">
             <h3 class="name">${intern.name}</h3>
             <h4 class="type">Intern</h4>
         </section>

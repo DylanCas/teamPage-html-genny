@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #001514;
+}
+/* My Team header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2E4057;
+    padding: 3%;
+}
+/* Manager, Engineer, Intern titles */
+h2 {
+    margin: 2%;
+    color: white;
+}
+
+.main {
+    display: flex;
+}
+
+.managerCard {
+    text-align: center;
+    border: 2px solid black;
+}
+
+.engineers, .interns {
+    text-align: center;
+    border: 2px solid black;
+}
+
+.engineerCards, .internCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.type {
+    font-style: italic;
+}
+/* Card containing the inquirer content */
+.card {
+    border: 2px solid blue;
+    background-color: #4C6085;
+    margin: 2%;
+    padding: 3%;
+    font-size: 100%;
+}
+

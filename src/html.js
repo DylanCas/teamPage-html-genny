@@ -16,20 +16,26 @@ const htmlTemplate = `<!DOCTYPE html>
         <section class="manager">
             <section class="managerCard">
                 <h2>Manager</h2>
+                    <!-- Manager Card -->
                     ${managerCard}
+                    <!-- End of Manager Card -->
             </section>
         </section>
         <section class="employees">
             <section class="engineers">
                 <h2>Engineers</h2>
                 <section class="engineerCards">
+                    <!-- Engineer Cards -->
                     ${engineerCards}
+                    <!-- End of Engineer Cards -->
                 </section>
             </section>
             <section class="interns">
                 <h2>Interns</h2>
                 <section class="internCards">
+                    <!-- Intern Cards -->
                     ${internCards}
+                    <!-- End of Intern Cards -->
                 </section>
             </section>
         </section>
