@@ -1,4 +1,4 @@
-## teamPage-html-genny
+## TeamPage Generator
 
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
@@ -36,5 +36,5 @@ open an issue in the repo or create a fork.
 
 ## Question
 
-If  you have any questions about this app, you can open an issue in the repo or reach me directly at Djcasabona12@gmail.com
+If  you have any questions about this app, you can open an issue in the repo or reach me directly at djcasabona12@gmail.com
 And see more of my work at (https://github.com/DylanCas)
